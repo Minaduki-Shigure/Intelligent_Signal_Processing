@@ -12,7 +12,8 @@ function [k, time] = legacy()
         k = k + 1;
     end
     k;
-    Xmin;
+    Xmin
+    Ymin
     time = toc;
 end
 
