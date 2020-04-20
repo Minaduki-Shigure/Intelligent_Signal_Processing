@@ -1,10 +1,10 @@
 function main()
     iternum = 500;
     test_bench(@legacy, iternum);
-    test_bench(@standalone_1, iternum);
-    test_bench(@standalone_2, iternum);
-    test_bench(@hybrid_1, iternum);
-    test_bench(@hybrid_2, iternum);
+    test_bench(@chaos_standalone_1, iternum);
+    test_bench(@chaos_standalone_2, iternum);
+    test_bench(@chaos_hybrid_1, iternum);
+    test_bench(@chaos_hybrid_2, iternum);
 end
 
 function test_bench(fun, iternum)
