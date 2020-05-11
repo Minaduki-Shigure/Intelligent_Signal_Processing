@@ -1,13 +1,15 @@
 function main()
-    iternum = 5;
-    %result_1 = test_bench(@basic, iternum);
-    %result_2 = test_bench(@advanced, iternum);
-    %result_3 = test_bench(@niche, iternum);
-    result_4 = test_bench(@monkey, iternum);
-    %disp_result(result_1);
-    %disp_result(result_2);
-    %disp_result(result_3);
+    iternum = 100;
+    result_1 = test_bench(@basic, iternum);
+    result_2 = test_bench(@immu, iternum);
+    result_3 = test_bench(@advanced, iternum);
+    result_4 = test_bench(@niche, iternum);
+    result_5 = test_bench(@monkey, iternum);
+    disp_result(result_1);
+    disp_result(result_2);
+    disp_result(result_3);
     disp_result(result_4);
+    disp_result(result_5);
 end
 
 function result = test_bench(fun, iternum)
